@@ -2,10 +2,10 @@ class FigStep extends HTMLElement {
   constructor(s) {
     super();
     this.style.position = "relative";
-    const txt = s.toString() || this.textContent || 0;
+    const txt = s || this.textContent || 0;
     this.textContent = "";
     const c = document.createElement("span");
-    const n = txt.indexOf(" ");
+    const n = typeof txt == "string" ? txt.indexOf(" ") : -1;
     c.textContent = n < 0 ? txt : txt.substring(0, n);
     this.appendChild(c);
     Object.assign(c.style, {
