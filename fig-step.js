@@ -24,7 +24,7 @@ class FigStep extends HTMLElement {
       height: "1.5em",
     });
 
-    this.style.display = document.location.href.indexOf("fig=on") >= 0 ? "block" : "none";
+    this.style.display = document.location.href.indexOf("fig=on") >= 0 ? "inline-block" : "none";
   }
 }
 
