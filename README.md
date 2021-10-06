@@ -5,3 +5,7 @@
 
 <fig-step>1 これこれをする</fig-step>
 ```
+
+## demo
+
+- https://code4fukui.github.io/fig-step/?fig=on
