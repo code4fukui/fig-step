@@ -12,7 +12,7 @@ class FigStep extends HTMLElement {
       "font-family": "sans-serif",
       position: "absolute",
       "text-align": "center",
-      top: "-1.5em",
+      top: "-1.8em",
       left: "0em",
       "z-index": 100,
       color: "black",
