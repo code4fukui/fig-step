@@ -26,6 +26,20 @@ class FigStep extends HTMLElement {
 
     this.style.display = document.location.href.indexOf("fig=on") >= 0 ? "inline-block" : "none";
   }
+  
+  static add(selector, s) {
+    const c = document.body.querySelector(selector);
+    if (!c) {
+      console.log("not found: " + selector);
+      return;
+    }
+    const b = c.getBoundingClientRect();
+    const fig = new FigStep(s);
+    document.body.appendChild(fig);
+    fig.style.position = "absolute";
+    fig.style.top = (b.top + window.pageYOffset) + "px";
+    fig.style.left = (b.left + window.pageXOffset) + "px";
+  }
 }
 
 customElements.define("fig-step", FigStep);
