@@ -2,7 +2,7 @@ class FigStep extends HTMLElement {
   constructor(s) {
     super();
     this.style.position = "relative";
-    const txt = s || this.textContent;
+    const txt = s.toString() || this.textContent || 0;
     this.textContent = "";
     const c = document.createElement("span");
     const n = txt.indexOf(" ");
@@ -26,7 +26,7 @@ class FigStep extends HTMLElement {
 
     this.style.display = document.location.href.indexOf("fig=on") >= 0 ? "inline-block" : "none";
   }
-  
+
   static add(selector, s) {
     const c = document.body.querySelector(selector);
     if (!c) {
