@@ -5,4 +5,3 @@
 
 <fig-step>1 これこれをする</fig-step>
 ```
-

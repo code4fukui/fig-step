@@ -1,8 +1,8 @@
 class FigStep extends HTMLElement {
-  constructor() {
+  constructor(s) {
     super();
     this.style.position = "relative";
-    const txt = this.textContent;
+    const txt = s || this.textContent;
     this.textContent = "";
     const c = document.createElement("span");
     const n = txt.indexOf(" ");
