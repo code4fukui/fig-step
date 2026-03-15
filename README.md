@@ -1,5 +1,7 @@
 # fig-step
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A JavaScript library to add numbered annotations to elements on a web page.
 
 ## Demo
