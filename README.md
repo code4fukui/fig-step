@@ -28,4 +28,4 @@ Then, add the `<fig-step>` element wherever you want an annotation to appear:
 The number in the annotation will be automatically generated.
 
 ## License
-This project is licensed under the MIT License.
+MIT License — see [LICENSE](LICENSE).
